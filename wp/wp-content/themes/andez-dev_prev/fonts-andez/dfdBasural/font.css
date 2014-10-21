@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdBasural';
+  src: url('dfdBasural.eot'); /* IE9 Compat Modes */
+  src: url('dfdBasural.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdBasural.woff') format('woff'), /* Modern Browsers */
+       url('dfdBasural.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdBasural.svg#f9c6da17a68238c48f1c950412621003') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

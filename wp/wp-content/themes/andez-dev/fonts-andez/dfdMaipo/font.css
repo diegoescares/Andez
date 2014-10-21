@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdMaipo';
+  src: url('dfdMaipo.eot'); /* IE9 Compat Modes */
+  src: url('dfdMaipo.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdMaipo.woff') format('woff'), /* Modern Browsers */
+       url('dfdMaipo.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdMaipo.svg#7d28d09cd34458c24cf125df01a8de53') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

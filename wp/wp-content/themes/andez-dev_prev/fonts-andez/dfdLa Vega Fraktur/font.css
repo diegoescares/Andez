@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdLa Vega Fraktur';
+  src: url('dfdLa Vega Fraktur.eot'); /* IE9 Compat Modes */
+  src: url('dfdLa Vega Fraktur.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdLa Vega Fraktur.woff') format('woff'), /* Modern Browsers */
+       url('dfdLa Vega Fraktur.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdLa Vega Fraktur.svg#c99d9bc07c5f897fb8a04af990f45321') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

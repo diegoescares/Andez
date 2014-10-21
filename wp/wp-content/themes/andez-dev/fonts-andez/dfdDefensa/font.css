@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdDefensa';
+  src: url('dfdDefensa.eot'); /* IE9 Compat Modes */
+  src: url('dfdDefensa.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdDefensa.woff') format('woff'), /* Modern Browsers */
+       url('dfdDefensa.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdDefensa.svg#68f412a96cd32c6955f77c8a238825e9') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

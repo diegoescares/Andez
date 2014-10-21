@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdAnimita';
+  src: url('dfdAnimita.eot'); /* IE9 Compat Modes */
+  src: url('dfdAnimita.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdAnimita.woff') format('woff'), /* Modern Browsers */
+       url('dfdAnimita.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdAnimita.svg#4c32e9b9ee9ce5955fd81a1b895c028f') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

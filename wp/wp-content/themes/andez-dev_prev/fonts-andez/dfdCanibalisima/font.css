@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdCanibalisima';
+  src: url('dfdCanibalisima.eot'); /* IE9 Compat Modes */
+  src: url('dfdCanibalisima.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdCanibalisima.woff') format('woff'), /* Modern Browsers */
+       url('dfdCanibalisima.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdCanibalisima.svg#43a2503d482a55d17d4dff466d855594') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

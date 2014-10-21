@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdLastarria';
+  src: url('dfdLastarria.eot'); /* IE9 Compat Modes */
+  src: url('dfdLastarria.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdLastarria.woff') format('woff'), /* Modern Browsers */
+       url('dfdLastarria.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdLastarria.svg#0becac2d368c555a12474b6485fd3ac0') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

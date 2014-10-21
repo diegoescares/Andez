@@ -1,0 +1,112 @@
+
+
+
+header_height = 80px
+header_height_min = 60px
+header_width = 260px
+logo_width = 50px
+logo_width_min = 40px
+
+header
+	position fixed
+	width 100%
+	top 0
+	left 0
+	z-index 5 // Arriba
+	transition .5s ease
+	&.header-hide
+		top -100px
+		@media break2
+			top 0
+	.inner
+		padding 0 15px
+		height header_height
+		background black
+
+	#logo
+		width logo_width
+		height logo_width
+		margin-left (logo_width/-2)
+		position absolute
+		left 50%
+		top 15px
+		display block
+		svg
+			width logo_width
+			height logo_width
+	ul
+		li
+			display block
+			float left
+			margin 20px 5px 0
+			&:nth-last-child(1)
+			&:nth-last-child(2)
+				float right
+			a
+				display block
+				padding 8px 15px 5px
+				color white
+				text-transform uppercase
+				position relative
+				.fa
+					display none
+				.line
+					position absolute
+					bottom 0
+					left 0
+					width 0%
+					height 1px
+					background white
+					display block
+					transition .5s cb
+				&:hover
+					.line
+						width 100%
+				&.current
+					.line
+						width 100%
+			ul
+				display none
+
+#body
+	padding-top header_height
+	position relative
+	z-index 4 // Al medio
+	overflow hidden
+
+
+@media break2
+	header
+		.secretmenu-button
+			display block
+		.inner
+			height header_height_min
+	
+		#logo
+			width logo_width_min
+			height logo_width_min
+			margin-left (logo_width_min/-2)
+			top 10px
+			svg
+				width logo_width_min
+				height logo_width_min
+
+		ul
+			display none
+		.header-left
+			display none
+
+	#body
+		padding-top header_height_min
+
+
+
+.secretmenu
+	border-left 1px solid #222
+	a
+		padding 20px
+		display block
+		border-bottom 1px solid #222
+		color white
+
+

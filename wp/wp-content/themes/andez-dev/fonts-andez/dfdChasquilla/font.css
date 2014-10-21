@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdChasquilla';
+  src: url('dfdChasquilla.eot'); /* IE9 Compat Modes */
+  src: url('dfdChasquilla.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdChasquilla.woff') format('woff'), /* Modern Browsers */
+       url('dfdChasquilla.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdChasquilla.svg#decfba3f1d91dec6cd157a2c7d093bcd') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

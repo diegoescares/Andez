@@ -1,0 +1,167 @@
+
+
+
+
+.page.page-fuentes
+	transition .5s ease
+	.inner
+		padding-right 0
+		padding-left 0
+		margin-top -100px
+		padding-top 100px
+
+
+
+
+.tools.tools-global
+	position fixed
+	bottom 0
+	left 0
+	width 100%
+	z-index 2
+	.tools-inner
+		background #333
+		color white
+		overflow hidden
+		.test-size
+			position relative
+			float left
+			border-right 1px solid #222
+			input
+				text-align right
+			.number
+				button
+					border 0
+					radius 0
+					background #333
+					color #555
+					left 0
+					right auto
+					border-right 1px solid #222
+					&.menos
+						border-top 1px solid #222
+					&:hover
+						background color
+						color white
+
+
+
+		.test-text
+			position relative
+			overflow hidden
+		input
+			padding 20px
+			color white
+			background transparent
+			font-size 26px
+			width 100%
+			box-sizing border-box
+			border 0
+			color #999
+			&:focus
+				color white
+
+
+
+
+
+
+
+
+article_font_border = 1px solid rgba(0,0,0,.1)
+
+.articles-font
+	border-top article_font_border
+	border-left article_font_border
+	margin 0 -1px
+
+
+article.article-font
+	a
+		transition .2s ease
+	.article-inner
+		border-bottom article_font_border
+		border-right article_font_border
+		margin-left -1px
+		margin-top -1px
+		padding 0px
+	.article-header
+		overflow hidden
+		.article-title
+			float left
+			transition .2s ease
+			opacity .5
+			a
+				color black
+				display block
+				padding 10px
+		.article-author
+			float right
+			padding 10px
+			font-size 15px
+			opacity 0
+			transition .2s ease
+			img
+				display inline-block
+				circle 25px
+				margin -4px 5px -2px
+				vertical-align middle
+	.article-body
+		overflow hidden
+		a
+			padding 20px 0 20px
+			display block
+			color black
+	.article-footer
+		padding 15px
+		transition .4s ease
+		opacity 0
+		text-align right
+		a
+			color black
+			font-size 16px
+			text-transform uppercase
+
+
+	&:hover
+		.article-body
+			a
+				opacity 1
+		.article-header
+			.article-title
+				opacity 1
+			.article-author
+				opacity 1
+		.article-footer
+			opacity 1
+
+
+
+	.font
+		white-space nowrap
+		opacity 0
+		padding 0 0 0 30px
+		height 150px
+		transition .2s ease
+		.font-big
+			font-size 60px
+			margin-top -20px
+			margin-bottom -40px
+			line-height 150px
+			height 150px
+			padding 0
+			display block
+			width 100%
+			background transparent
+			transition .2s ease
+		.font-small
+			font-size 20px
+			line-height 20px
+			height 20px
+		&.font-loaded
+			opacity 1
+			animation fadeIn .5s .5s ease backwards
+
+
+
+

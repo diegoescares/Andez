@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Rakatan Negra';
+  src: url('Rakatan Negra.eot'); /* IE9 Compat Modes */
+  src: url('Rakatan Negra.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Rakatan Negra.woff') format('woff'), /* Modern Browsers */
+       url('Rakatan Negra.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Rakatan Negra.svg#da27dfeb499cc337851142b084eb0f62') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

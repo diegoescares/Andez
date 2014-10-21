@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdThe Go Font';
+  src: url('dfdTheGoFont.eot'); /* IE9 Compat Modes */
+  src: url('dfdTheGoFont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdTheGoFont.woff') format('woff'), /* Modern Browsers */
+       url('dfdTheGoFont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdTheGoFont.svg#bea07459f4f822d9fe22423aa4ff94cf') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

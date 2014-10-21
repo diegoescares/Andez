@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdRevolucionaria';
+  src: url('dfdRevolucionaria.eot'); /* IE9 Compat Modes */
+  src: url('dfdRevolucionaria.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdRevolucionaria.woff') format('woff'), /* Modern Browsers */
+       url('dfdRevolucionaria.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdRevolucionaria.svg#32e769a2ae2c2c614b79b20069e85b37') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

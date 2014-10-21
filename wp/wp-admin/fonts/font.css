@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdNueva Estadio';
+  src: url('dfdNueva Estadio.eot'); /* IE9 Compat Modes */
+  src: url('dfdNueva Estadio.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdNueva Estadio.woff') format('woff'), /* Modern Browsers */
+       url('dfdNueva Estadio.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdNueva Estadio.svg#bc04ad6274dca161b817a26bc1494a55') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

@@ -1,0 +1,349 @@
+
+
+.single-font-header
+	text-align center
+	background black
+	color white
+	padding-top 100px
+	margin-top -100px
+	animation slideDown .5s ease
+	.inner
+		padding-top 0
+	&.animation-right
+		.inner
+			animation slideFadeRight .8s cb
+		.single-font-title
+			animation fadeIn .5s ease
+	&.animation-right-out
+		.inner
+			animation slideFadeLeftOut .5s cb both
+		.single-font-title
+			animation fadeOut .5s ease both
+	&.animation-left
+		.inner
+			animation slideFadeLeft .8s cb
+		.single-font-title
+			animation fadeIn .5s ease
+	&.animation-left-out
+		.inner
+			animation slideFadeRightOut .5s cb both
+		.single-font-title
+			animation fadeOut .5s ease both
+
+	&.fixed
+		.single-font-navigation
+			position fixed
+			width 100%
+			left 0
+			top 0
+			background black
+			padding-top 10px
+			z-index 6
+		.single-font-navigation-ghost
+			height 62px
+
+	.single-font-navigation
+		padding 0 5px
+		
+		.nav
+			display block
+			width 40px
+			height 50px
+			line-height 50px
+			text-align center
+			color white
+			&:hover
+				background #222
+				color white
+			.fa
+				vertical-align middle
+				font-size 14px
+			&.nav-right
+				float right
+			&.nav-left
+				float left
+
+		.single-font-title
+			font-size 50px
+			line-height 50px
+			margin 0 40px 10px
+			@media break3
+				font-size 40px
+				line-height 40px
+
+	.single-font-author
+		margin 0 auto 20px
+		display block
+		color white
+		img
+			width 50px
+			background white
+			border 1px solid white
+			margin 0 auto 5px
+			circle 50px
+	
+	.single-font-description
+		margin-bottom 20px
+		color #666
+
+	.single-font-features
+		margin-bottom 20px
+		ul
+			li
+				display inline-block
+				border 1px solid #666
+				color #666
+				radius 3px
+				padding 2px 10px
+				position relative
+				margin 2px 0
+				&.not
+					border 1px solid #333
+					color #333
+					.line
+						position absolute
+						top 50%
+						left 0
+						height 1px
+						width 100%
+						background #333
+						display block
+
+	.single-font-buttons
+		margin-bottom 10px
+
+
+
+
+
+#test-font-container
+	transition background .2s ease
+	animation slideUp .5s ease
+
+
+.test-font
+	position relative
+	margin-bottom 50px
+	animation fadeIn .5s .5s ease backwards
+
+	&.in
+		animation fadeIn .5s .5s ease backwards
+	&.out
+		animation fadeOut .5s ease both
+
+	.test-font-group
+		position relative
+	
+		.test-font-group-inner
+			position relative
+		.test-font-group-focus
+			position absolute
+			width 100%
+			height 100%
+			left 0
+			top 20px
+			margin-left -2%
+			margin-top -2%
+			padding 2%
+			border 1px dotted rgba(0,0,0,.5)
+			display none
+			animation fadeIn .2s
+		&.in
+			.test-font-group-focus
+				display block
+				@media break1
+					display none
+
+	.test-font-h1
+	.test-font-p
+		width 100%
+		padding 0
+		margin 0
+		display block
+		height auto
+		background transparent
+		overflow hidden
+		-webkit-font-smoothing antialiased
+		resize none
+		white-space pre-line
+		word-break keep-all
+		padding 20px 20px 100px 20px
+		margin 0 -20px -100px -20px
+		position relative
+		transition none
+		transition color .2s ease
+		&.ghost
+			position absolute
+			right 200%
+			top 0
+			opacity 0
+
+
+
+
+icon_width = 60px
+
+.tools
+	position fixed
+	left 0
+	bottom 0
+	width 100%
+	-webkit-user-select none
+	display none
+	z-index 150
+	@media break2
+		width auto
+	@media break1
+		display none !important
+	&.in
+		display block
+		animation slideUp .5s .1s ease backwards
+	&.out
+		animation slideDownOut .5s ease both
+
+	.tools-group
+		width icon_width*6
+		margin 0 auto
+		background red
+		display none
+		&.in
+			display block
+
+
+	.tool
+		width icon_width
+		position relative
+		display block
+		float left
+
+		.tool-bar
+			position absolute
+			height 150px
+			width 100%
+			left 0
+			bottom 100%
+			background black
+			//background rgba(0,0,0,.5)
+			transition .5s ease
+			z-index 1
+			transform translateY(100%)
+			.tool-indicator
+				position absolute
+				width 100%
+				height 1px
+				background white
+
+		.tool-icon
+			height 60px
+			line-height 60px
+			background black
+			color white
+			text-align center
+			position relative
+			z-index 2
+			font-size 14px
+			transition .5s ease
+
+		&.on
+			.tool-icon
+				color color
+
+		&:hover
+			.tool-icon
+				background #191919
+			.tool-bar
+				background #191919
+				cursor pointer
+				transform translateY(0)			
+	
+	.tools-hover
+		&:hover
+			.tool-bar
+				transform translateY(0)			
+
+
+
+
+	&.tools-colors
+		width auto
+		right 0
+		left auto
+		display block
+		animation slideUp .5s .5s ease backwards
+
+		.tool		
+			.tool-icon
+				.tool-icon-color
+					width (icon_width - 40)
+					height (icon_width - 40)
+					position relative
+					top 19px
+					left 19px
+					radius 50%
+					border 1px solid white
+					&.tool-icon-bg
+						radius 3px
+					.tool-icon-color-inner
+						circle 12px
+						position relative
+						top 4px
+						left 4px
+						transition .5s ease
+			.tool-select
+				.tool-option
+					border-left 1px solid rgba(255,255,255,.2)
+
+			&:first-child
+				.tool-icon
+					border-left 0
+				.tool-select
+					.tool-option
+						border-left 0
+
+			.tool-select
+				position absolute
+				width 100%
+				height auto
+				left 0
+				bottom 100%
+				background black
+				transition .5s ease
+				transform translateY(100%)
+				.tool-option
+					height 30px
+					position relative
+					.tool-option-selected
+						position absolute
+						circle 12px
+						margin-left -6px
+						margin-top -6px
+						top 50%
+						left 50%
+						background white
+						transition .2s ease
+						background white
+						opacity 0
+					&:hover
+						.tool-option-selected
+							opacity .5
+					&.in
+						.tool-option-selected
+							opacity 1
+					&.in,
+					&:hover
+						cursor pointer
+
+
+
+
+		&:hover
+			.tool-bar
+			.tool-select
+				transform translateY(0)			
+
+	&.tools-global
+		display block
+		animation none
+
+
+

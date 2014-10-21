@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Renzo';
+  src: url('renzo.eot'); /* IE9 Compat Modes */
+  src: url('renzo.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('renzo.woff') format('woff'), /* Modern Browsers */
+       url('renzo.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('renzo.svg#91249583f8e389b164b17f394ed5c284') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

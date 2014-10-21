@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Rakatan Blanca';
+  src: url('Rakatan Blanca.eot'); /* IE9 Compat Modes */
+  src: url('Rakatan Blanca.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Rakatan Blanca.woff') format('woff'), /* Modern Browsers */
+       url('Rakatan Blanca.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Rakatan Blanca.svg#05e839af15b644f22ba3048f4a35a721') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdNahueltoro';
+  src: url('dfdNahueltoro.eot'); /* IE9 Compat Modes */
+  src: url('dfdNahueltoro.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdNahueltoro.woff') format('woff'), /* Modern Browsers */
+       url('dfdNahueltoro.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdNahueltoro.svg#972979d0b98b80f62d043233db337b9c') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

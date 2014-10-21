@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Pincoyablack';
+  src: url('pincoyablack.eot'); /* IE9 Compat Modes */
+  src: url('pincoyablack.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('pincoyablack.woff') format('woff'), /* Modern Browsers */
+       url('pincoyablack.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('pincoyablack.svg#0a3fe451847aa22062e41aa61f6dc702') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

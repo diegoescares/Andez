@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdMiliciana';
+  src: url('dfdMiliciana.eot'); /* IE9 Compat Modes */
+  src: url('dfdMiliciana.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdMiliciana.woff') format('woff'), /* Modern Browsers */
+       url('dfdMiliciana.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdMiliciana.svg#2cd595035c50289dfedc9884ecc567d9') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

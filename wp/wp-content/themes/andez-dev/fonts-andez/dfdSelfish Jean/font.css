@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'dfdSelfish Jean';
+  src: url('dfdSelfishJean.eot'); /* IE9 Compat Modes */
+  src: url('dfdSelfishJean.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('dfdSelfishJean.woff') format('woff'), /* Modern Browsers */
+       url('dfdSelfishJean.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('dfdSelfishJean.svg#5bc92cba2cfe813250541cf72a9cc939') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+

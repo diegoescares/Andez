@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'Perejil';
+  src: url('Perejil.eot'); /* IE9 Compat Modes */
+  src: url('Perejil.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('Perejil.woff') format('woff'), /* Modern Browsers */
+       url('Perejil.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('Perejil.svg#20fe255da044904d60c8c72b43821120') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
