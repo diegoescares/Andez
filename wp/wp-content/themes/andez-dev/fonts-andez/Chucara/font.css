@@ -7,7 +7,7 @@
        url('Chucara-Regular.svg#6dc739d53dfa38f1fbc56f353d69d076') format('svg'); /* Legacy iOS */
        
   font-style:   normal;
-  font-weight:  400;
+  font-weight:  normal;
 }
 
 @font-face {
@@ -19,6 +19,6 @@
        url('Chucara-Italic.svg#4a79ccc6c71b93867b7a10ba1c16dd7c') format('svg'); /* Legacy iOS */
        
   font-style:   italic;
-  font-weight:  400;
+  font-weight:  normal;
 }
 

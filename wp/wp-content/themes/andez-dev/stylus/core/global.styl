@@ -237,15 +237,28 @@ img
 		line-height 20px
 		padding 12px 25px
 		radius rad
-	&.button-line
-		border 1px solid #DDD
+
+
+	&.button-line-black
+		border 1px solid black
+		background transparent
+		color black
+		radius 0
+		&:hover
+			background white
+			color black
+
+	&.button-line-white
+		border 1px solid white
 		background transparent
 		color white
 		radius 0
 		&:hover
-			background primary_color
-			border-color primary_color
-			color darken(color,50%)
+			background white
+			color black
+
+
+
 	&.button-disabled
 		background #999
 		border-color #999

@@ -16,20 +16,23 @@ app.fonts =
 
 	add: (font,font_id) ->
 
-		if !$("head").find('link[data-font-id="'+font_id+'"]').length
-			$("head").append '<link href="'+$("body").attr("data-url")+'/wp-content/fonts/'+font_id+'/font.css" rel="stylesheet" type="text/css" data-font="'+font_id+'" />'
+		if font && font_id
+
+			if !$("head").find('link[data-font-id="'+font_id+'"]').length
+				$("head").append '<link href="'+$("body").attr("data-url")+'/wp-content/fonts/'+font_id+'/font.css" rel="stylesheet" type="text/css" data-font="'+font_id+'" />'
 
 
 	loadFont: (fontdiv,callback=false) ->
 		font    = fontdiv.attr("data-font")
 		font_id    = fontdiv.attr("data-font-id")
-		app.fonts.add font, font_id
-		fontdiv.css
-			"font-family": font
-		fontdiv.find("div,input").css
-			"font-family": font
-		#console.log "--- Fuente puesta"
-		app.fonts.checkFont(fontdiv,font)
+		if font && font_id && font!=undefined
+			app.fonts.add font, font_id
+			fontdiv.css
+				"font-family": font
+			fontdiv.find("div,input").css
+				"font-family": font
+			#console.log "--- Fuente puesta"
+			app.fonts.checkFont(fontdiv,font)
 
 
 	searchLoadFont: ->
@@ -123,6 +126,7 @@ app.fonts =
 					if newfont_id
 
 						$(".test-font").attr "data-font", newfont
+						$(".test-font").attr "data-font-id", newfont_id
 						$(".test-font-h1, .test-font-p").css
 							"font-family": newfont
 
@@ -137,37 +141,6 @@ app.fonts =
 						app.fonts.nav.init()
 						app.actions.init()
 
-
-
-
-				###
-
-				$(".single-font-header").load url+" .single-font-header>", ->
-					$(".single-font-header").removeClass "animation-right-out"
-					$(".single-font-header").removeClass "animation-left-out" 
-					$(".single-font-header").addClass "animation-"+dir
-
-					newfont = $("h1").attr("data-font")
-					newfont_id = $("h1").attr("data-font-id")
-
-					if newfont_id
-
-						$(".test-font").attr "data-font", newfont
-						$(".test-font-h1, .test-font-p").css
-							"font-family": newfont
-
-						$(".test-font").removeClass("out").addClass "in"
-
-						app.fonts.add newfont, newfont_id
-						app.fonts.tools.textareaheight()
-						setTimeout ->
-							app.fonts.tools.textareaheight()
-						,1000
-
-						app.fonts.nav.init()
-						app.actions.init()
-
-				###
 			,500
 
 
@@ -203,8 +176,9 @@ app.fonts =
 				i++
 
 			# Insert font
-			font = div.attr("data-font")
-			app.fonts.add font
+			font = div.parent().attr("data-font")
+			font_id = div.parent().attr("data-font-id")
+			app.fonts.add font, font_id
 			div.css
 				"font-family": font
 

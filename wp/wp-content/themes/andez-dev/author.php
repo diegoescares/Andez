@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+
+
 <div class="page-header">
 	<div class="limit">
 		<div class="inner">
@@ -19,10 +21,10 @@
 
 <?php 
 
-
-
 	$args['post_type'] = array( 'post','tipografias' );
 	$args['author']    = get_the_author_meta("ID");
+
+	echo $args['author'];
 	query_posts( $args );
 
 	if ( have_posts() ) :
@@ -33,5 +35,6 @@
 		endwhile;
 	endif;
 ?>
+
 
 <?php get_footer(); ?>

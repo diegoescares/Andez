@@ -83,7 +83,8 @@
 			<div class="secretmenu-content">
 				<ul>
 					<li><a href="<?php bloginfo('url') ?>" <?php if(is_home()){ ?>class="current"<?php } ?>>Inicio<span class="line"></span></a></li>
-					<li><a href="<?php bloginfo('url') ?>/tipografias/" <?php if(is_archive("tipografias")){ ?>class="current"<?php } ?>>Fuentes<span class="line"></span></a></li>
+					<li><a href="<?php bloginfo('url') ?>/tipografias/" <?php if(is_archive("tipografias") && !is_category()){ ?>class="current"<?php } ?>>Tipografías<span class="line"></span></a></li>
+					<li><a href="<?php bloginfo('url') ?>/categoria/tutoriales" <?php if(is_category("tutoriales")){ ?>class="current"<?php } ?>>Tutoriales<span class="line"></span></a></li>
 					<li><a href="<?php bloginfo('url') ?>/contacto/" <?php if(is_page("contacto")){ ?>class="current"<?php } ?>>Contacto<span class="line"></span></a></li>
 					<li><a href="<?php bloginfo('url') ?>/tipografias-chilenas/" <?php if(is_page("tipografias-chilenas")){ ?>class="current"<?php } ?>>¿Qué es andez?<span class="line"></span></a></li>
 				</ul>

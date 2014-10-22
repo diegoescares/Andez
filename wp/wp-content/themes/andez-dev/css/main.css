@@ -52,62 +52,62 @@ h4 {
 h1,
 .h1 {
   font-size: 70px;
-  line-height: 77px;
+  line-height: 70px;
 }
 @media all and (max-width:959px) {
   h1,
   .h1 {
     font-size: 56px;
-    line-height: 62px;
+    line-height: 56px;
   }
 }
 @media all and (max-width:719px) {
   h1,
   .h1 {
     font-size: 42px;
-    line-height: 47px;
+    line-height: 42px;
   }
 }
 h2,
 .h2 {
   font-size: 56px;
-  line-height: 62px;
+  line-height: 56px;
 }
 @media all and (max-width:959px) {
   h2,
   .h2 {
     font-size: 42px;
-    line-height: 47px;
+    line-height: 42px;
   }
 }
 @media all and (max-width:719px) {
   h2,
   .h2 {
     font-size: 28px;
-    line-height: 31px;
+    line-height: 28px;
   }
 }
 h3,
 .h3 {
   font-size: 42px;
-  line-height: 47px;
+  line-height: 42px;
 }
 @media all and (max-width:959px) {
   h3,
   .h3 {
     font-size: 28px;
-    line-height: 31px;
+    line-height: 28px;
   }
 }
 h4,
 .h4 {
   font-size: 28px;
-  line-height: 31px;
+  line-height: 28px;
 }
 h5,
 .h5 {
   font-size: 24.5px;
-  line-height: 27px;
+  line-height: 25px;
 }
 ul,
 ol {
@@ -328,18 +328,29 @@ img.img-circle {
   padding: 12px 25px;
   border-radius: 5px;
 }
-.button.button-line,
-.button.button.button-line {
-  border: 1px solid #ddd;
+.button.button-line-black,
+.button.button.button-line-black {
+  border: 1px solid #000;
+  background: transparent;
+  color: #000;
+  border-radius: 0;
+}
+.button.button-line-black:hover,
+.button.button.button-line-black:hover {
+  background: #fff;
+  color: #000;
+}
+.button.button-line-white,
+.button.button.button-line-white {
+  border: 1px solid #fff;
   background: transparent;
   color: #fff;
   border-radius: 0;
 }
-.button.button-line:hover,
-.button.button.button-line:hover {
-  background: #0fc;
-  border-color: #0fc;
-  color: #008066;
+.button.button-line-white:hover,
+.button.button.button-line-white:hover {
+  background: #fff;
+  color: #000;
 }
 .button.button-disabled,
 .button.button.button-disabled {
@@ -1620,10 +1631,9 @@ body.is-ie .loading .loading-icon .loading-icon-circle {
           transition: 0.5s ease;
 }
 .page.page-fuentes .inner {
-  padding-right: 0;
-  padding-left: 0;
-  margin-top: -100px;
+  padding: 0;
   padding-top: 100px;
+  margin-top: -100px;
 }
 .tools.tools-global {
   position: fixed;
@@ -2190,6 +2200,7 @@ header ul li ul {
           transform: translateX(-100%);
   -webkit-transition: 0.5s ease;
           transition: 0.5s ease;
+  margin-right: 20px;
 }
 .hola .hola-proportion {
   width: 100%;
@@ -2835,6 +2846,30 @@ article.article-entry:hover .article-title a {
 }
 .gallery img {
   width: 100%;
+}
+.single-download {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page.page-tutoriales {
+  position: relative;
+  color: #fff;
+  background: #000;
+  text-align: center;
+  overflow: hidden;
+}
+.page.page-tutoriales .page-cover {
+  position: absolute;
+  top: -5%;
+  left: -10%;
+  height: 110%;
+  width: 120%;
+  background: center center no-repeat;
+  background-size: cover;
+  -webkit-filter: blur(20px);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5jc3MiLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJtYWluLnN0eWwiXSwic291cmNlc0NvbnRlbnQiOlsiXG5AaW1wb3J0ICd2YXJzLnN0eWwnXG5AaW1wb3J0ICdmdW5jdGlvbnMuc3R5bCdcblxuQGltcG9ydCAnY29yZS9nbG9iYWwuc3R5bCdcbkBpbXBvcnQgJ2NvcmUvbGF5b3V0LnN0eWwnXG5AaW1wb3J0ICdjb3JlL2FuaW1hdGlvbnMuc3R5bCdcbkBpbXBvcnQgJ2NvcmUvc2VjcmV0TWVudS5zdHlsJ1xuQGltcG9ydCAnY29yZS9mb3Jtcy5zdHlsJ1xuXG5AaW1wb3J0ICdjb21wb25lbnRzLyonXG5AaW1wb3J0ICdzaXRlLyonXG4iXSwic291cmNlUm9vdCI6Ii9zb3VyY2UvIn0= */
